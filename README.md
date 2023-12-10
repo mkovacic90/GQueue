@@ -81,14 +81,22 @@ Environment=ASPNETCORE_ENVIRONMENT=Production
 
 [Install]
 WantedBy=multi-user.target
+```
 Save the changes and exit the text editor.
 ii)	Reload the system manager configuration:
+```
 sudo systemctl daemon-reload
+```
 Enable the service to start on boot:
+```
 sudo systemctl enable gqueue.service
+```
 Start the service:
+```
 sudo systemctl start gqueue.service
+```
 Verify that the service is running properly:
+```
 sudo systemctl status gqueue.service
 ```
 
