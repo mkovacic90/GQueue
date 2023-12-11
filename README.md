@@ -66,7 +66,7 @@ Add the following configuration to the service file (adjust paths, user and grou
 Description=GQueue Job Scheduler and Monitor
 
 [Service]
-# Make sure to set the correct folder
+# Make sure to set the correct folder for both the .NET and GQueueDaemon
 ExecStart=/usr/bin/dotnet /home/user/GQueue/GQueueDaemon.dll
 WorkingDirectory=/home/user/GQueue
 # Make sure to set the correct user and group
